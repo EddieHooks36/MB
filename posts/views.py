@@ -1,7 +1,6 @@
 from django.views.generic import ListView, DetailView
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic.edit import CreateView,  DeleteView, UpdateView
 from .models import Post
-
 
 
 class PostListView(ListView):
