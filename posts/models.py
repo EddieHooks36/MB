@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 
 class Status(models.Model):
     name = models.CharField(max_length=128)
-    decription = models.TextField()
+    description = models.TextField()
 
     def __str__(self):
         return self.name

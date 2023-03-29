@@ -8,7 +8,7 @@ def populate_status(apps, schemaeditor):
         "unpublished": "A blog post that is visible to the author."
     }
     Status = apps.get_model("posts", "Status")
-    for key, desc in status.itmes():
+    for key, desc in status.items():
         status_obj = Status(name=key, description=desc)
         status_obj.save()
 
